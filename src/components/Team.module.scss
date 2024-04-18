@@ -1,0 +1,23 @@
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  color: #FFFFFF;
+  width: 90%;
+
+  button{
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+  }
+}
+
+.east {
+  color: white;
+  font-weight: 600;
+}
+
+.logInOut{
+  color: orange;
+  background-color: #111111;
+}

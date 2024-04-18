@@ -1,0 +1,34 @@
+// CONTAINER
+.main{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 3px solid orange;
+}
+
+// LEFT
+// .left{
+// }
+.mainTitle {
+    color: orange;
+    font-size: 30px;
+}
+// /LEFT
+
+// RIGHT
+// .right{
+// }
+.buttons{
+  background-color: orange;
+  height: 40px;
+  width: 80px;
+  border-radius: 50px;
+  margin-left: 10px;
+  
+}
+// /RIGHT
+
+// /CONTAINER
