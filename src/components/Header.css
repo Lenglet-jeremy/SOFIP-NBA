@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    color: orange;
+}
+
+.HeaderArea{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    .Header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        border-bottom: 3px solid orange;
+
+        .Title {
+            
+        }
+
+        .Conferences{
+
+            button{
+                background-color: #060e1f;
+                color: orange;
+                border: 1px solid orange;
+                border-radius: 15px;
+                margin-left: 30px;
+            }
+        } 
+    }
+}

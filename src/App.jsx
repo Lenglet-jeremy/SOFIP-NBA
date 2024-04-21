@@ -1,6 +1,7 @@
-import styles from "./App.module.scss";
-import Team from "./components/Team";
-import Header from "./components/Header"
+import Header from './components/Header';
+import Teams from "./components/Teams";
+import './App.css'
+import { useState } from 'react';
 
 function App() {
   const teams = [
@@ -215,18 +216,24 @@ function App() {
       logo: "https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg",
     },
   ];
-
   const person = {
-    name: "John",
-    age: 20,
-    licensed: true,
-  };
+    personName : "John",
+    personAge : 18,
+    licensed : false,
+  }
+
+  const [view, setView] = useState("All");
+
+  function changeView(value){
+    setView(value)
+  }
+
   return (
-    <div className={`d-flex align-items-center flex-column  ${styles.main}`}>
-      <Header />
-      <Team person={person} teams={teams} />
-    </div>
-  );
+    <>
+      <Header changeView={changeView}/>
+      <Teams teams={teams} person={person} view={view} />
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,22 +1,19 @@
-import styles from "./Header.module.scss";
+import "./Header.css"
 
-export default function Header () {
-
-    return (
-        <>
-        <div className={`${styles.main}`}>
-            
-            <div className={`${styles.left}`}>
-                <h1 className={`${styles.mainTitle}`}>NBA</h1>
+export default function Header({changeView}){
+    return(
+        <div class="HeaderArea">
+            <div class="Header">
+                <div class="Title">
+                    <h1>NBA</h1>
+                </div>
+                <div class="Conferences">
+                    <button onClick={() => changeView("West")}>West</button>
+                    <button onClick={() => changeView("East")}>East</button>
+                    <button onClick={() => changeView("All")}>All</button>
+                </div>
             </div>
-            
-            <div className={`${styles.right}`}>
-                <button className={`${styles.buttons}`}>East</button>
-                <button className={`${styles.buttons}`}>West</button>
-                <button className={`${styles.buttons}`}>All</button>
-            </div>
-
         </div>
-        </>
+        
     )
 }

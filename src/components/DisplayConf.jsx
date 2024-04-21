@@ -1,28 +1,12 @@
-import styles from "./DisplayConf.module.scss"
-import OneTeam from "./OneTeam"
+import "./DisplayConf.css"
 
-export default function DisplayConf ({teams}){
-    return (<>
-        <h2 className={`mt-30 ml-20 ${styles.east}`}>Conférence Est</h2>
-        <div className="d-flex flex-wrap justify-content-center">
-          {teams
-            .filter((t) => t.conference === "East")
-            .map((t) => (
-              <OneTeam key={t.id} t={t} />
-            ))}
-    
+export default function DisplayConf({team}){
+    return (
+
+        <div class="OneTeam">
+            <p>CITY : <span>{team.name}</span></p>
+            <p>NAME : <span>{team.club}</span></p>
+            <img src={team.logo} alt="" />
         </div>
-        <h2 className={`mt-30 ml-20 ${styles.east}`}>Conférence Ouest</h2>
-        <div className="d-flex flex-wrap justify-content-center">
-    
-          {teams
-            .filter((t) => t.conference === "West")
-            .map((t) => (
-              <OneTeam key={t.id} t={t} />
-            ))}
-    
-        </div>
-        </>
-        )
-    
+    )
 }

@@ -1,0 +1,37 @@
+.WelcomeArea{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #333333;
+    
+    .Welcome{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.Conf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+}
+
+.TeamsArea{
+    .AllTeam{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .WestEastTeam{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    
+}
