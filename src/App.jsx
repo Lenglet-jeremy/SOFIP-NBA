@@ -219,7 +219,7 @@ function App() {
   const person = {
     personName : "John",
     personAge : 18,
-    licensed : false,
+    licensed : true,
   }
 
   const [view, setView] = useState("All");
